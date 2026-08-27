@@ -16,88 +16,135 @@
     - Reply To:    {{email}}
     - Subject:     Nueva solicitud de contacto - {{company}} ({{from_name}})
 -->
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#eef1f5;padding:24px 0;font-family:Arial,Helvetica,sans-serif;">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">
+  Nueva solicitud de {{company}} ({{from_name}}) — revisa los detalles y responde directamente desde este correo.
+</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#eef1f5;padding:32px 16px;font-family:Arial,Helvetica,sans-serif;">
   <tr>
     <td align="center">
-      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:14px;overflow:hidden;box-shadow:0 8px 24px rgba(3,29,66,0.08);">
 
         <!-- Encabezado -->
         <tr>
-          <td style="background-color:#031d42;padding:28px 32px;">
+          <td style="background-color:#031d42;padding:30px 32px 26px;">
             <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
               <tr>
-                <td width="56" valign="middle">
+                <td width="52" valign="middle">
                   <img
                     src="https://jairopc22.github.io/LNX-PAYMENT/assets/icons/icon-512x512.png"
-                    width="48"
-                    height="48"
+                    width="46"
+                    height="46"
                     alt="LNX"
                     style="display:block;border-radius:10px;"
                   />
                 </td>
                 <td valign="middle" style="padding-left:14px;">
                   <p style="margin:0;font-size:18px;font-weight:bold;color:#ffffff;letter-spacing:0.5px;">LNX TECHNOLOGIES</p>
-                  <p style="margin:2px 0 0;font-size:13px;color:#19b9ed;">Nueva solicitud de contacto</p>
+                  <p style="margin:2px 0 0;font-size:13px;color:#5dd3f5;">Pagos que mueven tu negocio</p>
+                </td>
+                <td valign="middle" align="right">
+                  <table role="presentation" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td style="background-color:rgba(255,255,255,0.12);border-radius:999px;padding:6px 14px;font-size:11px;font-weight:bold;color:#5dd3f5;letter-spacing:0.4px;text-transform:uppercase;white-space:nowrap;">
+                        Nueva solicitud
+                      </td>
+                    </tr>
+                  </table>
                 </td>
               </tr>
             </table>
+          </td>
+        </tr>
+
+        <!-- Barra de acento -->
+        <tr>
+          <td style="line-height:0;font-size:0;">
+            <div style="height:4px;background-color:#0874be;background-image:linear-gradient(90deg,#0d6fe0,#19b9ed);"></div>
           </td>
         </tr>
 
         <!-- Cuerpo -->
         <tr>
           <td style="padding:32px;">
-            <p style="margin:0 0 20px;font-size:15px;color:#1a2b45;">
-              Has recibido una nueva solicitud desde el formulario de contacto del sitio web de LNX.
+            <p style="margin:0 0 24px;font-size:15px;line-height:1.5;color:#1a2b45;">
+              Alguien acaba de llenar el formulario de contacto del sitio web. Estos son los detalles:
             </p>
 
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;overflow:hidden;">
+            <!-- Datos de contacto -->
+            <p style="margin:0 0 10px;font-size:12px;font-weight:bold;color:#0874be;text-transform:uppercase;letter-spacing:0.6px;">
+              📇&nbsp; Datos de contacto
+            </p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;overflow:hidden;margin-bottom:24px;">
               <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;width:38%;font-size:13px;color:#5b6b85;">Nombre</td>
-                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{from_name}}</td>
+                <td style="padding:13px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;width:38%;font-size:13px;color:#5b6b85;">Nombre</td>
+                <td style="padding:13px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{from_name}}</td>
               </tr>
               <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Empresa / negocio</td>
-                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{company}}</td>
+                <td style="padding:13px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Empresa / negocio</td>
+                <td style="padding:13px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{company}}</td>
               </tr>
               <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Correo</td>
-                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;">
+                <td style="padding:13px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Correo</td>
+                <td style="padding:13px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;">
                   <a href="mailto:{{email}}" style="color:#0874be;font-weight:bold;text-decoration:none;">{{email}}</a>
                 </td>
               </tr>
               <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Teléfono</td>
-                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{phone}}</td>
-              </tr>
-              <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Tipo de negocio</td>
-                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{business_type}}</td>
-              </tr>
-              <tr>
-                <td style="padding:14px 16px;background-color:#f7f9fb;font-size:13px;color:#5b6b85;">Solución de interés</td>
-                <td style="padding:14px 16px;font-size:14px;color:#031d42;font-weight:bold;">{{solution}}</td>
+                <td style="padding:13px 16px;background-color:#f7f9fb;font-size:13px;color:#5b6b85;">Teléfono</td>
+                <td style="padding:13px 16px;font-size:14px;color:#031d42;font-weight:bold;">{{phone}}</td>
               </tr>
             </table>
 
-            <p style="margin:24px 0 8px;font-size:13px;color:#5b6b85;text-transform:uppercase;letter-spacing:0.5px;">Mensaje</p>
-            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;">
+            <!-- Detalles de la solicitud -->
+            <p style="margin:0 0 10px;font-size:12px;font-weight:bold;color:#0874be;text-transform:uppercase;letter-spacing:0.6px;">
+              🧾&nbsp; Detalles de la solicitud
+            </p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;overflow:hidden;margin-bottom:24px;">
               <tr>
-                <td style="padding:16px;font-size:14px;line-height:1.6;color:#1a2b45;">{{message}}</td>
+                <td style="padding:13px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;width:38%;font-size:13px;color:#5b6b85;">Tipo de negocio</td>
+                <td style="padding:13px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{business_type}}</td>
+              </tr>
+              <tr>
+                <td style="padding:13px 16px;background-color:#f7f9fb;font-size:13px;color:#5b6b85;">Solución de interés</td>
+                <td style="padding:13px 16px;font-size:14px;color:#031d42;font-weight:bold;">{{solution}}</td>
               </tr>
             </table>
 
-            <p style="margin:24px 0 0;font-size:12px;color:#8a97ab;">
+            <!-- Mensaje -->
+            <p style="margin:0 0 10px;font-size:12px;font-weight:bold;color:#0874be;text-transform:uppercase;letter-spacing:0.6px;">
+              💬&nbsp; Mensaje
+            </p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f7f9fb;border-left:3px solid #19b9ed;border-radius:0 10px 10px 0;margin-bottom:28px;">
+              <tr>
+                <td style="padding:16px 18px;font-size:14px;line-height:1.65;color:#1a2b45;">{{message}}</td>
+              </tr>
+            </table>
+
+            <!-- Boton de respuesta -->
+            <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+              <tr>
+                <td align="center" style="border-radius:8px;background-color:#0874be;background-image:linear-gradient(135deg,#0d6fe0,#073865);">
+                  <a
+                    href="mailto:{{email}}?subject=Re:%20tu%20solicitud%20a%20LNX"
+                    style="display:inline-block;padding:13px 28px;font-size:14px;font-weight:bold;color:#ffffff;text-decoration:none;letter-spacing:0.3px;"
+                  >
+                    Responder a {{from_name}}
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <p style="margin:26px 0 0;font-size:12px;color:#8a97ab;text-align:center;">
               Enviado el {{submitted_at}} desde el formulario de contacto de lnxpayments.
-              Responde directamente a este correo para contactar a {{from_name}}.
             </p>
           </td>
         </tr>
 
         <!-- Pie -->
         <tr>
-          <td style="background-color:#031d42;padding:16px 32px;">
-            <p style="margin:0;font-size:12px;color:#93a4c2;">© 2026 LNX Technologies</p>
+          <td style="background-color:#031d42;padding:18px 32px;text-align:center;">
+            <p style="margin:0;font-size:12px;color:#93a4c2;">© 2026 LNX Technologies — todos los derechos reservados</p>
           </td>
         </tr>
 

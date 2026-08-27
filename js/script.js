@@ -16,8 +16,8 @@ import { initChatbot } from './chatbot.js';
 // 5. Pega los tres valores abajo. Mientras alguno quede vacio, el formulario
 //    opera en modo demostracion y jamas simula un envio real.
 // -----------------------------------------------------------------------
-export const EMAILJS_SERVICE_ID = '';
-export const EMAILJS_TEMPLATE_ID = '';
+export const EMAILJS_SERVICE_ID = 'service_c13zjqf';
+export const EMAILJS_TEMPLATE_ID = 'template_una2wws';
 export const EMAILJS_PUBLIC_KEY = '';
 
 const THEME_KEY = 'lnx-theme';
