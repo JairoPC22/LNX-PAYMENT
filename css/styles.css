@@ -1446,6 +1446,17 @@ ul.nav__menu--open {
   color: rgba(255, 255, 255, 0.82);
 }
 
+.contact-info__desc a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-info__desc a:hover,
+.contact-info__desc a:focus-visible {
+  color: var(--lnx-cyan);
+}
+
 .contact-form {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -1770,6 +1781,20 @@ ul.nav__menu--open {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 1.75rem;
+}
+
+.footer__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.footer__email svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .footer__bottom {

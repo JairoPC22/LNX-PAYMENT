@@ -167,8 +167,9 @@ confirmación oficial.
 
 ## Cómo agregar datos de contacto reales
 
-El sitio actualmente no incluye teléfono, correo, WhatsApp, dirección ni redes sociales porque no
-fueron confirmados. Cuando existan datos oficiales:
+El correo de contacto confirmado (`LNXTech2025@outlook.com`) ya está en el sitio: en el footer y
+en la sección de contacto (`#contact`). Teléfono, WhatsApp, dirección física y redes sociales
+siguen sin incluirse porque no fueron confirmados. Cuando existan esos datos oficiales:
 - Agrégalos en la sección de contacto de `index.html` y en el footer.
 - Actualiza las claves correspondientes en `js/i18n.js` si agregas texto nuevo.
 - Si agregas redes sociales, considera añadir la propiedad `sameAs` al bloque JSON-LD en
@@ -237,7 +238,8 @@ Estos elementos quedaron deliberadamente sin definir porque no fueron proporcion
 confirmados, siguiendo la instrucción de no inventar datos comerciales:
 
 - **Dominio propio**: por ahora se usa la URL de GitHub Pages (`jairopc22.github.io/LNX-PAYMENT`).
-- **Datos de contacto**: teléfono, correo, WhatsApp, dirección física, redes sociales.
+- **Datos de contacto**: teléfono, WhatsApp, dirección física, redes sociales (el correo,
+  `LNXTech2025@outlook.com`, ya está confirmado y agregado al sitio).
 - **Especificaciones de terminales**: modelos, procesadores, memoria, batería, pantalla,
   conectividad, métodos de pago aceptados, certificaciones.
 - **Detalles de la alianza con OnTheFly**: términos exactos, exclusividad (se asume que no la

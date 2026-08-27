@@ -174,6 +174,7 @@ const dictionaries = {
     'contact.info2Desc': 'Solicitar información o una demostración no te obliga a nada.',
     'contact.info3Title': 'Datos protegidos',
     'contact.info3Desc': 'Tu información se usa solo para responder tu solicitud.',
+    'contact.info4Title': 'Escríbenos directamente',
 
     'footer.privacy': 'Aviso de privacidad',
     'footer.terms': 'Términos y condiciones',
@@ -349,6 +350,7 @@ const dictionaries = {
     'contact.info2Desc': 'Requesting info or a demo does not commit you to anything.',
     'contact.info3Title': 'Protected data',
     'contact.info3Desc': 'Your information is only used to respond to your request.',
+    'contact.info4Title': 'Write to us directly',
 
     'footer.privacy': 'Privacy notice',
     'footer.terms': 'Terms and conditions',
