@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="lnxSymbolTitle">
+  <title id="lnxSymbolTitle">Símbolo LNX</title>
+  <g transform="translate(256,256) scale(0.85) translate(-290.55,-264.16)">
+    <path fill="#031D42" d="M70 130h64v177c0 24 12 36 38 36h74v60h-91c-57 0-85-28-85-84V130z"/>
+    <path fill="#031D42" d="M190 403V188c0-39 22-62 57-62 22 0 39 9 56 30l62 79-42 51-70-90v207h-63z"/>
+    <path fill="#031D42" d="M314 130h74l49 60-39 47-84-107zM398 277l39-47 75 92v81h-35l-79-126zM313 403l126-151 39 47-86 104h-79z"/>
+    <path fill="#19B9ED" d="M444 130h68l-72 86-39-47 43-39z"/>
+  </g>
+</svg>

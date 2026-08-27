@@ -1,0 +1,21 @@
+.tools/node_modules/
+.tools/package-lock.json
+.DS_Store
+Thumbs.db
+
+# Documentacion interna de planeacion (no necesaria para servir el sitio)
+docs/
+
+# Assets de marca originales sin usar (reemplazados por assets/brand/*)
+/LNX-Favicon.svg
+/LNX-LOGO.png
+/LNX-Technologies-Logo.svg
+
+# Imagenes fuente sin usar, documentadas en README pero no referenciadas por el sitio
+assets/images/POS1.png
+assets/images/POS2.png
+assets/images/POS3.png
+assets/images/POS1-transparent.png
+assets/images/POS2-transparent.png
+assets/images/POS3-transparent.png
+assets/images/LNX-POS-terminal.glb

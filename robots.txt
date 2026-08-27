@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO: reemplazar por el dominio final antes de publicar
+Sitemap: https://www.lnxtechnologies.example/sitemap.xml

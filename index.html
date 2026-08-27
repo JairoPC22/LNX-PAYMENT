@@ -1,0 +1,858 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <script>document.documentElement.classList.remove('no-js');</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LNX Technologies - Soluciones de puntos de venta</title>
+  <meta name="description" content="LNX ofrece procesamiento de pagos, terminales y sistemas de punto de venta para restaurantes, tiendas y comercios, con soluciones conectadas al ecosistema OnTheFly." />
+
+  <!-- TODO: reemplazar por el dominio de produccion final antes de publicar -->
+  <link rel="canonical" href="https://www.lnxtechnologies.example/" />
+
+  <meta name="theme-color" content="#f3f4f5" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#050f1f" media="(prefers-color-scheme: dark)" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LNX Technologies" />
+  <meta property="og:title" content="LNX Technologies - Pagos, terminales y sistemas POS para comercios" />
+  <meta property="og:description" content="Procesamiento de pagos, terminales y sistemas de punto de venta para comercios, conectados al ecosistema OnTheFly." />
+  <meta property="og:image" content="https://www.lnxtechnologies.example/assets/images/og-image-1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="https://www.lnxtechnologies.example/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LNX Technologies - Pagos, terminales y sistemas POS" />
+  <meta name="twitter:description" content="Procesamiento de pagos, terminales y sistemas de punto de venta para comercios." />
+  <meta name="twitter:image" content="https://www.lnxtechnologies.example/assets/images/og-image-1200x630.png" />
+
+  <!-- Favicons e iconos -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/icons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="assets/icons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#031d42" />
+  <meta name="msapplication-TileImage" content="assets/icons/mstile-150x150.png" />
+  <meta name="msapplication-TileColor" content="#031d42" />
+  <link rel="manifest" href="manifest.json" />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="assets/fonts/Quantico-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" href="assets/images/hero-terminal.webp" as="image" type="image/webp" fetchpriority="high" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <noscript>
+    <style>
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .nav__menu { position: static !important; transform: none !important; }
+    </style>
+  </noscript>
+
+  <!-- JSON-LD: solo datos confirmados, sin direccion, telefono ni cifras -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LNX Technologies",
+    "alternateName": "LNX",
+    "description": "LNX desarrolla y conecta soluciones tecnologicas para ayudar a los comercios a administrar pagos y operaciones de manera mas clara y eficiente.",
+    "url": "https://www.lnxtechnologies.example/",
+    "logo": "https://www.lnxtechnologies.example/assets/brand/lnx-logo.svg"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage, contenido identico al de la seccion visible de preguntas frecuentes -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cómo sé qué terminal necesita mi negocio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del tipo de comercio y del volumen de ventas. Un asesor de LNX puede recomendarte la opcion adecuada despues de conocer tu operacion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿La integración con OnTheFly funciona con cualquier equipo?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La compatibilidad puede variar segun la solucion, el equipo y la configuracion del comercio. Un asesor puede confirmar que funciones aplican a tu caso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo toma comenzar a operar con LNX?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El tiempo varia segun el tipo de solucion y la configuracion necesaria para tu comercio. Solicita una demostracion para conocer el proceso completo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿LNX funciona para negocios pequeños?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "LNX esta pensado para distintos tipos y tamaños de comercio, desde negocios con atencion en mostrador hasta operaciones con multiples usuarios de venta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué pasa si ya tengo un sistema de punto de venta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cuentanos sobre tu operacion actual a traves del formulario de contacto; un asesor de LNX puede orientarte sobre las opciones disponibles."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+  <div class="grain" aria-hidden="true"></div>
+  <div id="header-sentinel" aria-hidden="true"></div>
+  <a class="skip-link" href="#main" data-i18n="a11y.skipLink">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand-logo" href="#top" aria-label="LNX Technologies">
+        <img
+          class="js-brand-logo"
+          src="assets/brand/lnx-logo-light.svg"
+          data-src-light="assets/brand/lnx-logo-light.svg"
+          data-src-dark="assets/brand/lnx-logo-dark.svg"
+          alt="LNX Technologies"
+          width="160"
+          height="62"
+        />
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__menu" id="primary-menu">
+          <li><a class="nav__link" href="#top" data-i18n="nav.home">Inicio</a></li>
+          <li><a class="nav__link" href="#solutions" data-i18n="nav.solutions">Soluciones</a></li>
+          <li><a class="nav__link" href="#onthefly" data-i18n="nav.onthefly">OnTheFly</a></li>
+          <li><a class="nav__link" href="#terminals" data-i18n="nav.terminals">Terminales</a></li>
+          <li><a class="nav__link" href="#about" data-i18n="nav.about">Nosotros</a></li>
+          <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li class="nav__cta-mobile">
+            <a class="btn btn--primary btn--sm" href="#contact" data-i18n="nav.cta">Solicitar una demostración</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <a class="btn btn--primary btn--sm header-cta" href="#contact" data-i18n="nav.cta">Solicitar una demostración</a>
+
+        <div class="control-cluster">
+          <div class="lang-switch" role="group" aria-label="Selector de idioma">
+            <button type="button" data-locale="es" aria-pressed="true" data-i18n-attr="aria-label:a11y.langEs">ES</button>
+            <button type="button" data-locale="en" aria-pressed="false" data-i18n-attr="aria-label:a11y.langEn">EN</button>
+          </div>
+
+          <span class="control-divider" aria-hidden="true"></span>
+
+          <button type="button" class="theme-toggle" aria-pressed="false" data-i18n-attr="aria-label:a11y.themeToDark">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke-linecap="round" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <button type="button" class="nav__toggle" aria-expanded="false" aria-controls="primary-menu" data-i18n-attr="aria-label:a11y.menuOpen">
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1 class="hero__title">
+            <span class="hero__line-mask"><span class="hero__line" style="--d: 0.05s" data-i18n="hero.title1">PAGOS</span></span>
+            <span class="hero__line-mask"><span class="hero__line hero__line--accent" style="--d: 0.16s" data-i18n="hero.title2">QUE MUEVEN</span></span>
+            <span class="hero__line-mask"><span class="hero__line" style="--d: 0.27s" data-i18n="hero.title3">TU NEGOCIO</span></span>
+          </h1>
+          <p class="hero__subtitle hero__fade-in" style="--d: 0.5s" data-i18n="hero.subtitle">
+            Tecnología de pagos y punto de venta para operar con mayor rapidez, visibilidad y control.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary hero__fade-in" style="--d: 0.62s" href="#contact" data-i18n="hero.ctaDemo">Solicitar una demostración</a>
+            <a class="btn btn--secondary hero__fade-in" style="--d: 0.72s" href="#solutions" data-i18n="hero.ctaSolutions">Conocer las soluciones</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__glow"></div>
+          <picture>
+            <source srcset="assets/images/hero-terminal.webp" type="image/webp" />
+            <img
+              class="hero__device-shot"
+              src="assets/images/hero-terminal.png"
+              alt=""
+              width="1100"
+              height="1650"
+              fetchpriority="high"
+            />
+          </picture>
+          <div class="hero__ground"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOLUCIONES ================= -->
+    <section id="solutions" class="section">
+      <div class="container">
+        <span class="section__eyebrow reveal" data-i18n="solutions.eyebrow">Soluciones</span>
+        <h2 class="section__title reveal" data-i18n="solutions.title">Tecnología para cada punto de tu operación</h2>
+        <p class="section__lede reveal" data-i18n="solutions.lede">
+          Desde el cobro hasta el reporte, LNX conecta las herramientas que tu comercio necesita para operar con más claridad.
+        </p>
+
+        <div class="grid grid--3" style="margin-top: 3rem">
+          <article class="card reveal" style="--reveal-index: 0">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2.5" y="5" width="19" height="14" rx="2.2" />
+                <path d="M2.5 9.5h19" stroke-linecap="round" />
+                <path d="M6 15h4" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item1.title">Procesamiento de pagos</h3>
+            <p class="card__desc" data-i18n="solutions.item1.desc">
+              Acepta pagos de tus clientes con soluciones pensadas para el ritmo de tu negocio.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 1">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="4" width="18" height="12" rx="1.8" />
+                <path d="M8 20h8M12 16v4" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item2.title">Sistemas de punto de venta</h3>
+            <p class="card__desc" data-i18n="solutions.item2.desc">
+              Administra ventas, productos y usuarios desde una interfaz clara pensada para el mostrador.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 2">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 20V10M11 20V4M18 20v-7" stroke-linecap="round" />
+                <path d="M3 20h18" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item3.title">Gestión de ventas</h3>
+            <p class="card__desc" data-i18n="solutions.item3.desc">
+              Organiza tu operación diaria con herramientas para dar seguimiento a las ventas de tu comercio.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 3">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6 3h9l4 4v14a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke-linejoin="round" />
+                <path d="M9 12h6M9 16h6" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item4.title">Reportes operativos</h3>
+            <p class="card__desc" data-i18n="solutions.item4.desc">
+              Consulta información de tu negocio para apoyar decisiones basadas en datos reales.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 4">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="8" width="18" height="12" rx="1.8" />
+                <path d="M8 8V6a4 4 0 0 1 8 0v2" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item5.title">Administración del negocio</h3>
+            <p class="card__desc" data-i18n="solutions.item5.desc">
+              Centraliza la operación de tu comercio con herramientas pensadas para el día a día.
+            </p>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 5">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="8" cy="12" r="4.2" />
+                <circle cx="16" cy="12" r="4.2" />
+              </svg>
+            </div>
+            <h3 class="card__title" data-i18n="solutions.item6.title">Conectado con OnTheFly</h3>
+            <p class="card__desc" data-i18n="solutions.item6.desc">
+              Soluciones relacionadas con el ecosistema OnTheFly para una operación más integrada.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ONTHEFLY ================= -->
+    <section id="onthefly" class="section onthefly">
+      <div class="container onthefly__grid">
+        <div>
+          <span class="section__eyebrow reveal" data-i18n="onthefly.eyebrow">Alianza tecnológica</span>
+          <h2 class="section__title reveal" style="max-width: 20ch">
+            <span class="hero__line" data-i18n="onthefly.title1">CONECTA PAGOS</span>
+            <span class="hero__line onthefly__brand" data-i18n="onthefly.title2">Y OPERACIÓN</span>
+            <span class="hero__line" data-i18n="onthefly.title3">CON ONTHEFLY</span>
+          </h2>
+          <p class="onthefly__lede reveal" data-i18n="onthefly.lede">
+            LNX trabaja con soluciones relacionadas con el ecosistema OnTheFly para ayudar a los comercios a conectar sus
+            pagos con su operación diaria. Consulta las funciones y compatibilidad disponibles para tu negocio.
+          </p>
+          <p class="disclaimer reveal" data-i18n="onthefly.disclaimer">
+            Las funciones, integraciones y disponibilidad pueden variar según la solución, el equipo y la configuración
+            del comercio.
+          </p>
+        </div>
+
+        <div class="onthefly__visual reveal" aria-hidden="true">
+          <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g class="onthefly__link" stroke="#19b9ed" stroke-width="1.5" stroke-dasharray="5 6">
+              <path d="M210 190 L100 90" />
+              <path d="M210 190 L320 90" />
+              <path d="M210 190 L110 290" />
+              <path d="M210 190 L320 290" />
+            </g>
+            <circle cx="210" cy="190" r="46" fill="#04122c" stroke="#19b9ed" stroke-width="1.5" />
+            <path d="M193 172h13v27c0 3.6 1.9 5.4 5.7 5.4h11.4v9h-13.7c-8.6 0-16.4-4.3-16.4-13V172z" fill="#19b9ed" transform="translate(0 -8) scale(0.62)" />
+            <g fill="#f4f7fa">
+              <path d="M197 172h9.6v27.3c0 8.9-5 13.9-13.9 13.9H179v-9h11.4c4.4 0 6.6-2.3 6.6-6.7V172z" />
+              <path d="M203 210v-24c0-5.9 3.3-9.4 8.7-9.4 3.4 0 6 1.3 8.6 4.6l9.6 12.2v-16h9.1v26.2c0 6-3.3 9.5-8.7 9.5-3.3 0-5.9-1.3-8.5-4.6l-9.5-12.1v16.1h-9.2z" />
+            </g>
+            <circle cx="100" cy="90" r="34" fill="var(--surface)" stroke="#233a5c" stroke-width="1.5" />
+            <rect x="86" y="74" width="28" height="34" rx="4" stroke="#19b9ed" stroke-width="1.6" fill="none" />
+            <rect x="92" y="80" width="16" height="10" rx="1.5" fill="#19b9ed" opacity="0.5" />
+            <circle cx="100" cy="97" r="2.4" fill="#19b9ed" />
+            <circle cx="320" cy="90" r="34" fill="var(--surface)" stroke="#233a5c" stroke-width="1.5" />
+            <path d="M306 104V80h6l8 11 8-11h6v24h-6V90l-8 10-8-10v14z" fill="#19b9ed" opacity="0.85" />
+            <circle cx="110" cy="290" r="34" fill="var(--surface)" stroke="#233a5c" stroke-width="1.5" />
+            <path d="M97 302V280h5v22z" fill="#19b9ed" opacity="0.5" />
+            <path d="M107 302V286h5v16z" fill="#19b9ed" opacity="0.7" />
+            <path d="M117 302V276h5v26z" fill="#19b9ed" />
+            <circle cx="320" cy="290" r="34" fill="var(--surface)" stroke="#233a5c" stroke-width="1.5" />
+            <rect x="306" y="276" width="28" height="28" rx="3" stroke="#19b9ed" stroke-width="1.6" fill="none" />
+            <path d="M312 286h16M312 292h16M312 298h10" stroke="#19b9ed" stroke-width="1.6" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TERMINALES ================= -->
+    <section id="terminals" class="section section--surface">
+      <div class="container terminals__intro">
+        <div>
+          <h2 class="section__title reveal" data-i18n="terminals.title">Equipos para distintos tipos de operación</h2>
+          <p class="section__lede reveal" data-i18n="terminals.lede">
+            Estas son categorías generales de equipo. Un asesor de LNX puede ayudarte a identificar la opción
+            adecuada para tu comercio.
+          </p>
+        </div>
+        <figure class="terminals__photo reveal">
+          <video
+            src="assets/videos/mobile-terminal.mp4"
+            poster="assets/videos/mobile-terminal-poster.webp"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label=""
+            data-i18n-attr="aria-label:terminals.photoAlt"
+          ></video>
+          <figcaption data-i18n="terminals.photoCaption">Ejemplo ilustrativo de un teclado de terminal de pago.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <!-- Pendiente: sustituir por modelo y especificaciones confirmadas -->
+        <div class="grid grid--4" style="margin-top: 3rem">
+          <article class="card reveal" style="--reveal-index: 0">
+            <div class="terminal-illustration terminal-illustration--photo" aria-hidden="true">
+              <picture>
+                <source srcset="assets/images/terminal-handoff.webp" type="image/webp" />
+                <img src="assets/images/terminal-handoff.jpg" alt="" loading="lazy" width="1400" height="933" />
+              </picture>
+            </div>
+            <p class="card__meta" data-i18n="terminals.item1.category">Terminal móvil</p>
+            <p class="card__desc" data-i18n="terminals.item1.desc">
+              Pensada para cobrar en mesa, en mostrador o en movimiento dentro del comercio.
+            </p>
+            <p class="card__desc" data-i18n="terminals.item1.business">Recomendada para: restaurantes y servicio a domicilio</p>
+            <div class="card__cta">
+              <a class="btn btn--secondary btn--sm" href="#contact" data-i18n="terminals.cta">Solicitar información</a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 1">
+            <div class="terminal-illustration terminal-illustration--photo" aria-hidden="true">
+              <picture>
+                <source srcset="assets/images/pos-countertop.webp" type="image/webp" />
+                <img src="assets/images/pos-countertop.jpg" alt="" loading="lazy" width="1400" height="933" />
+              </picture>
+            </div>
+            <p class="card__meta" data-i18n="terminals.item2.category">Terminal de mostrador</p>
+            <p class="card__desc" data-i18n="terminals.item2.desc">
+              Un equipo fijo para el punto de cobro principal de tiendas y comercios.
+            </p>
+            <p class="card__desc" data-i18n="terminals.item2.business">Recomendada para: tiendas y comercios con mostrador</p>
+            <div class="card__cta">
+              <a class="btn btn--secondary btn--sm" href="#contact" data-i18n="terminals.cta">Solicitar información</a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 2">
+            <div class="terminal-illustration terminal-illustration--photo" aria-hidden="true">
+              <picture>
+                <source srcset="assets/images/pos-system-front.webp" type="image/webp" />
+                <img src="assets/images/pos-system-front.jpg" alt="" loading="lazy" width="1400" height="933" />
+              </picture>
+            </div>
+            <p class="card__meta" data-i18n="terminals.item3.category">Sistema POS</p>
+            <p class="card__desc" data-i18n="terminals.item3.desc">
+              Una solución de punto de venta para gestionar ventas, productos y usuarios.
+            </p>
+            <p class="card__desc" data-i18n="terminals.item3.business">Recomendada para: comercios con múltiples usuarios de venta</p>
+            <div class="card__cta">
+              <a class="btn btn--secondary btn--sm" href="#contact" data-i18n="terminals.cta">Solicitar información</a>
+            </div>
+          </article>
+
+          <article class="card reveal" style="--reveal-index: 3">
+            <div class="terminal-illustration terminal-illustration--photo" aria-hidden="true">
+              <picture>
+                <source srcset="assets/images/pos-allinone.webp" type="image/webp" />
+                <img src="assets/images/pos-allinone.jpg" alt="" loading="lazy" width="1400" height="934" />
+              </picture>
+            </div>
+            <p class="card__meta" data-i18n="terminals.item4.category">Solución todo en uno</p>
+            <p class="card__desc" data-i18n="terminals.item4.desc">
+              Cobro y sistema de venta integrados en un mismo equipo.
+            </p>
+            <p class="card__desc" data-i18n="terminals.item4.business">Recomendada para: negocios que buscan simplificar su operación</p>
+            <div class="card__cta">
+              <a class="btn btn--secondary btn--sm" href="#contact" data-i18n="terminals.cta">Solicitar información</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POR QUE LNX ================= -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2 class="section__title reveal" data-i18n="why.title">Una operación más conectada</h2>
+
+        <div class="grid grid--3" style="margin-top: 3rem">
+          <div class="reveal" style="--reveal-index: 0">
+            <h3 class="card__title" data-i18n="why.item1.title">Operación conectada</h3>
+            <p class="card__desc" data-i18n="why.item1.desc">Pagos y operación trabajando de forma más integrada.</p>
+          </div>
+          <div class="reveal" style="--reveal-index: 1">
+            <h3 class="card__title" data-i18n="why.item2.title">Mayor visibilidad</h3>
+            <p class="card__desc" data-i18n="why.item2.desc">Información de tu negocio disponible para apoyar tus decisiones.</p>
+          </div>
+          <div class="reveal" style="--reveal-index: 2">
+            <h3 class="card__title" data-i18n="why.item3.title">Tecnología adaptable</h3>
+            <p class="card__desc" data-i18n="why.item3.desc">Soluciones que pueden ajustarse a distintos tipos de comercio.</p>
+          </div>
+          <div class="reveal" style="--reveal-index: 3">
+            <h3 class="card__title" data-i18n="why.item4.title">Información para decisiones</h3>
+            <p class="card__desc" data-i18n="why.item4.desc">Reportes pensados para entender mejor tu operación diaria.</p>
+          </div>
+          <div class="reveal" style="--reveal-index: 4">
+            <h3 class="card__title" data-i18n="why.item5.title">Soluciones para distintos comercios</h3>
+            <p class="card__desc" data-i18n="why.item5.desc">Herramientas pensadas para restaurantes, tiendas y negocios de servicio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TIPOS DE COMERCIO ================= -->
+    <section class="section section--surface">
+      <div class="container business__grid">
+        <div>
+          <h2 class="section__title reveal" data-i18n="business.title">Pensado para tu tipo de negocio</h2>
+          <p class="section__lede reveal" data-i18n="business.lede">
+            LNX acompaña a distintos tipos de comercio en su operación diaria.
+          </p>
+          <ul class="chip-list reveal">
+            <li class="chip" data-i18n="business.chip1">Restaurantes</li>
+            <li class="chip" data-i18n="business.chip2">Cafeterías</li>
+            <li class="chip" data-i18n="business.chip3">Tiendas</li>
+            <li class="chip" data-i18n="business.chip4">Servicios</li>
+            <li class="chip" data-i18n="business.chip5">Comercios con atención en mostrador</li>
+          </ul>
+        </div>
+        <figure class="business__photo reveal">
+          <picture>
+            <source srcset="assets/images/pos-in-use.webp" type="image/webp" />
+            <img
+              src="assets/images/pos-in-use.jpg"
+              alt=""
+              data-i18n-attr="alt:business.photoAlt"
+              loading="lazy"
+              width="1920"
+              height="1280"
+            />
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= NOSOTROS ================= -->
+    <section id="about" class="section">
+      <div class="container about__grid">
+        <div>
+          <h2 class="section__title reveal" data-i18n="about.title">Sobre LNX</h2>
+          <p class="section__lede reveal" data-i18n="about.text">
+            LNX desarrolla y conecta soluciones tecnológicas para ayudar a los comercios a administrar pagos y
+            operaciones de manera más clara y eficiente.
+          </p>
+
+          <div class="about__features">
+            <div class="about__feature reveal" style="--reveal-index: 0">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <circle cx="9" cy="20" r="1.4" />
+                  <circle cx="18" cy="20" r="1.4" />
+                  <path d="M2.5 3h2.4l2.4 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6l1.4-7.6H6.2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="card__title" data-i18n="about.feature1Title">Ventas más rápidas</h3>
+              <p class="card__desc" data-i18n="about.feature1Desc">Agiliza tu negocio y mejora la experiencia del cliente.</p>
+            </div>
+            <div class="about__feature reveal" style="--reveal-index: 1">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M4 20V10M11 20V4M18 20v-7" stroke-linecap="round" />
+                  <path d="M3 20h18" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="card__title" data-i18n="about.feature2Title">Reportes en tiempo real</h3>
+              <p class="card__desc" data-i18n="about.feature2Desc">Toma mejores decisiones con información actualizada.</p>
+            </div>
+            <div class="about__feature reveal" style="--reveal-index: 2">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M7 18a4.5 4.5 0 0 1-.5-8.98 5.5 5.5 0 0 1 10.7-1.7A4 4 0 0 1 17 18H7Z" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="card__title" data-i18n="about.feature3Title">Acceso desde cualquier lugar</h3>
+              <p class="card__desc" data-i18n="about.feature3Desc">Administra tu negocio desde la nube, seguro y conveniente.</p>
+            </div>
+            <div class="about__feature reveal" style="--reveal-index: 3">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                  <path d="M12 3l7 3v5c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3Z" stroke-linejoin="round" />
+                  <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="card__title" data-i18n="about.feature4Title">Seguro y confiable</h3>
+              <p class="card__desc" data-i18n="about.feature4Desc">Tus datos y tu negocio siempre protegidos.</p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="about__photo reveal">
+          <picture>
+            <source srcset="assets/images/pos-solutions-dashboard.webp" type="image/webp" />
+            <img
+              src="assets/images/pos-solutions-dashboard.jpg"
+              alt=""
+              data-i18n-attr="alt:about.photoAlt"
+              loading="lazy"
+              width="1263"
+              height="1246"
+            />
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= PREGUNTAS FRECUENTES ================= -->
+    <section id="faqs" class="section">
+      <div class="container">
+        <h2 class="section__title reveal" data-i18n="faq.title">Preguntas frecuentes</h2>
+
+        <div class="faq-list" style="margin-top: 2.5rem">
+          <details class="faq-item reveal" style="--reveal-index: 0">
+            <summary data-i18n="faq.q1">¿Cómo sé qué terminal necesita mi negocio?</summary>
+            <p data-i18n="faq.a1">
+              Depende del tipo de comercio y del volumen de ventas. Un asesor de LNX puede recomendarte la opción
+              adecuada después de conocer tu operación.
+            </p>
+          </details>
+          <details class="faq-item reveal" style="--reveal-index: 1">
+            <summary data-i18n="faq.q2">¿La integración con OnTheFly funciona con cualquier equipo?</summary>
+            <p data-i18n="faq.a2">
+              La compatibilidad puede variar según la solución, el equipo y la configuración del comercio. Un asesor
+              puede confirmar qué funciones aplican a tu caso.
+            </p>
+          </details>
+          <details class="faq-item reveal" style="--reveal-index: 2">
+            <summary data-i18n="faq.q3">¿Cuánto tiempo toma comenzar a operar con LNX?</summary>
+            <p data-i18n="faq.a3">
+              El tiempo varía según el tipo de solución y la configuración necesaria para tu comercio. Solicita una
+              demostración para conocer el proceso completo.
+            </p>
+          </details>
+          <details class="faq-item reveal" style="--reveal-index: 3">
+            <summary data-i18n="faq.q4">¿LNX funciona para negocios pequeños?</summary>
+            <p data-i18n="faq.a4">
+              LNX está pensado para distintos tipos y tamaños de comercio, desde negocios con atención en mostrador
+              hasta operaciones con múltiples usuarios de venta.
+            </p>
+          </details>
+          <details class="faq-item reveal" style="--reveal-index: 4">
+            <summary data-i18n="faq.q5">¿Qué pasa si ya tengo un sistema de punto de venta?</summary>
+            <p data-i18n="faq.a5">
+              Cuéntanos sobre tu operación actual a través del formulario de contacto; un asesor de LNX puede
+              orientarte sobre las opciones disponibles.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section id="contact" class="section section--surface">
+      <div class="container">
+        <span class="section__eyebrow reveal" data-i18n="contact.eyebrow">Contacto</span>
+        <h2 class="section__title reveal" data-i18n="contact.title">Hablemos de tu negocio</h2>
+        <p class="section__lede reveal" data-i18n="contact.lede">
+          Cuéntanos sobre tu comercio y un asesor de LNX se pondrá en contacto contigo.
+        </p>
+
+        <div class="contact-grid" style="margin-top: 2.5rem">
+          <aside class="contact-info reveal">
+            <ul class="contact-info__list">
+              <li>
+                <span class="contact-info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M4 6h16v12H4z" stroke-linejoin="round" />
+                    <path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="contact-info__title" data-i18n="contact.info1Title">Respuesta personalizada</p>
+                  <p class="contact-info__desc" data-i18n="contact.info1Desc">Un asesor de LNX revisa tu mensaje y te contacta directamente.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="12" cy="12" r="9" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="contact-info__title" data-i18n="contact.info2Title">Sin compromiso</p>
+                  <p class="contact-info__desc" data-i18n="contact.info2Desc">Solicitar información o una demostración no te obliga a nada.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <rect x="3" y="4" width="18" height="14" rx="2" />
+                    <path d="M3 9h18M8 4v4" stroke-linecap="round" />
+                  </svg>
+                </span>
+                <div>
+                  <p class="contact-info__title" data-i18n="contact.info3Title">Datos protegidos</p>
+                  <p class="contact-info__desc" data-i18n="contact.info3Desc">Tu información se usa solo para responder tu solicitud.</p>
+                </div>
+              </li>
+            </ul>
+          </aside>
+
+          <form id="contact-form" class="contact-form reveal" novalidate>
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="field-name" data-i18n="contact.labelName">Nombre</label>
+                <div class="form-field__control">
+                  <svg class="form-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <circle cx="12" cy="8" r="3.4" />
+                    <path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" stroke-linecap="round" />
+                  </svg>
+                  <input id="field-name" name="name" type="text" autocomplete="name" required aria-describedby="error-name" />
+                </div>
+                <p class="form-field__error" id="error-name" role="alert"></p>
+              </div>
+              <div class="form-field">
+                <label for="field-company" data-i18n="contact.labelCompany">Empresa o negocio</label>
+                <div class="form-field__control">
+                  <svg class="form-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <rect x="4" y="3" width="12" height="18" rx="1" />
+                    <path d="M16 8h4v13h-4M7 7h.01M10.5 7h.01M7 11h.01M10.5 11h.01M7 15h.01M10.5 15h.01" stroke-linecap="round" />
+                  </svg>
+                  <input id="field-company" name="company" type="text" autocomplete="organization" required aria-describedby="error-company" />
+                </div>
+                <p class="form-field__error" id="error-company" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="field-email" data-i18n="contact.labelEmail">Correo electrónico</label>
+                <div class="form-field__control">
+                  <svg class="form-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="M3 7l9 6 9-6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <input id="field-email" name="email" type="email" autocomplete="email" required aria-describedby="error-email" />
+                </div>
+                <p class="form-field__error" id="error-email" role="alert"></p>
+              </div>
+              <div class="form-field">
+                <label for="field-phone" data-i18n="contact.labelPhone">Teléfono</label>
+                <div class="form-field__control">
+                  <svg class="form-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                    <path d="M6.5 4h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5L16 13l4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4.5 6.2 2 2 0 0 1 6.5 4z" stroke-linejoin="round" />
+                  </svg>
+                  <input id="field-phone" name="phone" type="tel" autocomplete="tel" aria-describedby="error-phone" />
+                </div>
+                <p class="form-field__error" id="error-phone" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="form-row form-row--2">
+              <div class="form-field">
+                <label for="field-business-type" data-i18n="contact.labelBusinessType">Tipo de negocio</label>
+                <div class="form-field__control form-field__control--select">
+                  <select id="field-business-type" name="businessType" required aria-describedby="error-businessType">
+                    <option value="" data-i18n="contact.optionSelect">Selecciona una opción</option>
+                    <option value="restaurant" data-i18n="contact.business.restaurant">Restaurante</option>
+                    <option value="cafe" data-i18n="contact.business.cafe">Cafetería</option>
+                    <option value="store" data-i18n="contact.business.store">Tienda</option>
+                    <option value="service" data-i18n="contact.business.service">Servicios</option>
+                    <option value="counter" data-i18n="contact.business.counter">Comercio con mostrador</option>
+                    <option value="other" data-i18n="contact.business.other">Otro</option>
+                  </select>
+                </div>
+                <p class="form-field__error" id="error-businessType" role="alert"></p>
+              </div>
+              <div class="form-field">
+                <label for="field-solution" data-i18n="contact.labelSolution">Solución de interés</label>
+                <div class="form-field__control form-field__control--select">
+                  <select id="field-solution" name="solution" required aria-describedby="error-solution">
+                    <option value="" data-i18n="contact.optionSelect">Selecciona una opción</option>
+                    <option value="payments" data-i18n="contact.solution.payments">Procesamiento de pagos</option>
+                    <option value="pos" data-i18n="contact.solution.pos">Sistema de punto de venta</option>
+                    <option value="sales" data-i18n="contact.solution.sales">Gestión de ventas</option>
+                    <option value="reports" data-i18n="contact.solution.reports">Reportes operativos</option>
+                    <option value="onthefly" data-i18n="contact.solution.onthefly">Solución conectada con OnTheFly</option>
+                    <option value="other" data-i18n="contact.solution.other">Otra</option>
+                  </select>
+                </div>
+                <p class="form-field__error" id="error-solution" role="alert"></p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <div class="form-field__label-row">
+                <label for="field-message" data-i18n="contact.labelMessage">Mensaje</label>
+                <span class="form-field__counter" id="message-counter">0/500</span>
+              </div>
+              <textarea id="field-message" name="message" maxlength="500" required aria-describedby="error-message message-counter"></textarea>
+              <p class="form-field__error" id="error-message" role="alert"></p>
+            </div>
+
+            <!-- Honeypot antispam: campo oculto que un humano nunca completa -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="field-company-website">Company website</label>
+              <input id="field-company-website" name="company-website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="form-field form-field--checkbox">
+              <input id="field-privacy" name="privacy" type="checkbox" required aria-describedby="error-privacy" />
+              <label for="field-privacy" data-i18n="contact.labelPrivacy">He leído y acepto el aviso de privacidad.</label>
+            </div>
+            <p class="form-field__error" id="error-privacy" role="alert"></p>
+
+            <button type="submit" class="btn btn--primary btn--block">
+              <span class="btn__spinner" aria-hidden="true"></span>
+              <span class="btn__label" data-i18n="contact.submit">Enviar solicitud</span>
+            </button>
+
+            <div id="form-status" class="form-status" role="status" aria-live="polite">
+              <span class="form-status__icon" aria-hidden="true"></span>
+              <span class="form-status__text"></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="brand-logo" href="#top" aria-label="LNX Technologies">
+          <img
+            class="js-brand-logo"
+            src="assets/brand/lnx-logo-dark.svg"
+            data-src-light="assets/brand/lnx-logo-dark.svg"
+            data-src-dark="assets/brand/lnx-logo-dark.svg"
+            alt="LNX Technologies"
+            width="140"
+            height="54"
+          />
+        </a>
+        <nav class="footer__nav" aria-label="Navegación de pie de página">
+          <a href="#solutions" data-i18n="nav.solutions">Soluciones</a>
+          <a href="#onthefly" data-i18n="nav.onthefly">OnTheFly</a>
+          <a href="#terminals" data-i18n="nav.terminals">Terminales</a>
+          <a href="#about" data-i18n="nav.about">Nosotros</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <div class="lang-switch" role="group" aria-label="Selector de idioma">
+          <button type="button" data-locale="es" aria-pressed="true" data-i18n-attr="aria-label:a11y.langEs">ES</button>
+          <button type="button" data-locale="en" aria-pressed="false" data-i18n-attr="aria-label:a11y.langEn">EN</button>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          © <span class="js-footer-year">2026</span> LNX Technologies. <span data-i18n="footer.rights">Todos los derechos reservados.</span>
+        </p>
+        <div class="footer__legal">
+          <!-- Enlaces legales preparados: agregar el texto definitivo antes de publicar -->
+          <a href="#" data-i18n="footer.privacy">Aviso de privacidad</a>
+          <a href="#" data-i18n="footer.terms">Términos y condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" data-i18n-attr="aria-label:a11y.backToTop">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M6 11l6-6 6 6" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

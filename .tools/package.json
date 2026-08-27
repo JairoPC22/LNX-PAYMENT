@@ -1,0 +1,9 @@
+{
+  "name": "lnx-icon-tools",
+  "private": true,
+  "description": "Herramientas de build local: sharp regenera los iconos, three solo se usa para extraer assets/vendor/three.module.min.js y three.core.min.js (no se ejecuta desde aqui).",
+  "dependencies": {
+    "sharp": "^0.34.5",
+    "three": "^0.185.1"
+  }
+}
