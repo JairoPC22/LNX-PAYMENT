@@ -192,7 +192,8 @@ Para conectarlo:
 
 ## Cómo configurar el dominio final
 
-Antes de publicar, reemplaza `https://www.lnxtechnologies.example/` por el dominio real en:
+El sitio está publicado en `https://jairopc22.github.io/LNX-PAYMENT/` (GitHub Pages). Si en el
+futuro se usa un dominio propio, reemplaza esa URL por el dominio real en:
 - `index.html`: `<link rel="canonical">`, las etiquetas `og:*` y `twitter:*`, y el JSON-LD.
 - `robots.txt`: la línea `Sitemap:`.
 - `sitemap.xml`: la etiqueta `<loc>`.
@@ -219,19 +220,23 @@ invalida la caché anterior en los navegadores de los usuarios que ya visitaron 
 
 ## Cómo publicar en GitHub Pages
 
-1. Crea un repositorio en GitHub y sube el contenido de esta carpeta (`git init`, `git add`,
-   `git commit`, `git remote add origin ...`, `git push`).
-2. En la configuración del repositorio, ve a **Settings → Pages** y selecciona la rama principal
-   (por ejemplo `main`) con la carpeta raíz (`/`) como origen.
-3. GitHub Pages publicará el sitio en `https://<usuario>.github.io/<repositorio>/`. Actualiza el
-   dominio en los archivos mencionados arriba si usas un dominio personalizado.
+El repositorio ya está en `https://github.com/JairoPC22/LNX-PAYMENT`. Para activar la publicación:
+
+1. En la configuración del repositorio, ve a **Settings → Pages**.
+2. En "Build and deployment", elige **Deploy from a branch**, selecciona la rama `main` y la
+   carpeta raíz (`/`) como origen. Guarda.
+3. GitHub Pages publicará el sitio en `https://jairopc22.github.io/LNX-PAYMENT/` (puede tardar
+   uno o dos minutos la primera vez). Todas las metaetiquetas, el sitemap y el manifest ya están
+   configurados para esa URL.
+4. Si más adelante se usa un dominio personalizado, actualiza el dominio en los archivos
+   mencionados arriba.
 
 ## Información pendiente de confirmar
 
 Estos elementos quedaron deliberadamente sin definir porque no fueron proporcionados o
 confirmados, siguiendo la instrucción de no inventar datos comerciales:
 
-- **Dominio de producción** (usado como placeholder: `www.lnxtechnologies.example`).
+- **Dominio propio**: por ahora se usa la URL de GitHub Pages (`jairopc22.github.io/LNX-PAYMENT`).
 - **Datos de contacto**: teléfono, correo, WhatsApp, dirección física, redes sociales.
 - **Especificaciones de terminales**: modelos, procesadores, memoria, batería, pantalla,
   conectividad, métodos de pago aceptados, certificaciones.

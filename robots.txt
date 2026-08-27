@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# TODO: reemplazar por el dominio final antes de publicar
-Sitemap: https://www.lnxtechnologies.example/sitemap.xml
+Sitemap: https://jairopc22.github.io/LNX-PAYMENT/sitemap.xml

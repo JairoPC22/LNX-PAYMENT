@@ -1,15 +1,18 @@
 // Service worker de LNX — bump CACHE_VERSION en cada release para invalidar cachés previos.
 const CACHE_VERSION = 'lnx-v2';
+// Rutas relativas al propio sw.js: funcionan tanto si el sitio vive en la
+// raiz del dominio como en una subcarpeta (por ejemplo, un GitHub Pages de
+// proyecto tipo usuario.github.io/repo/).
 const PRECACHE_URLS = [
-  '/',
-  '/index.html',
-  '/404.html',
-  '/css/styles.css',
-  '/js/script.js',
-  '/js/i18n.js',
-  '/js/chatbot.js',
-  '/manifest.json',
-  '/favicon.svg',
+  './',
+  'index.html',
+  '404.html',
+  'css/styles.css',
+  'js/script.js',
+  'js/i18n.js',
+  'js/chatbot.js',
+  'manifest.json',
+  'favicon.svg',
 ];
 
 self.addEventListener('install', (event) => {
@@ -45,7 +48,7 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE_VERSION).then((cache) => cache.put(request, clone));
           return response;
         })
-        .catch(() => caches.match('/404.html'));
+        .catch(() => caches.match('404.html'));
     })
   );
 });
