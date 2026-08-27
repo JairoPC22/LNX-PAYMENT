@@ -165,6 +165,8 @@ const dictionaries = {
     'contact.errorPrivacy': 'Debes aceptar el aviso de privacidad para continuar.',
     'contact.statusSuccessDemo':
       'Modo de demostración: el formulario aún no está conectado a un sistema real. Este envío no se ha enviado a ningún servidor.',
+    'contact.statusSuccess': '¡Listo! Tu solicitud fue enviada. Un asesor de LNX se pondrá en contacto contigo pronto.',
+    'contact.notProvided': 'No proporcionado',
     'contact.statusError': 'Ocurrió un problema al enviar tu solicitud. Intenta de nuevo más tarde.',
     'contact.statusWait': 'Ya recibimos tu solicitud. Espera unos segundos antes de enviar otra.',
     'contact.statusInvalid': 'Revisa los campos marcados antes de continuar.',
@@ -341,6 +343,8 @@ const dictionaries = {
     'contact.errorPrivacy': 'You must accept the privacy notice to continue.',
     'contact.statusSuccessDemo':
       "Demo mode: this form isn't connected to a live system yet. This submission was not sent to any server.",
+    'contact.statusSuccess': "Done! Your request was sent. An LNX advisor will get in touch with you soon.",
+    'contact.notProvided': 'Not provided',
     'contact.statusError': 'There was a problem sending your request. Please try again later.',
     'contact.statusWait': 'We already received your request. Please wait a few seconds before sending another.',
     'contact.statusInvalid': 'Please review the highlighted fields before continuing.',

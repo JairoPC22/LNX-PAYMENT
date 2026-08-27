@@ -4,20 +4,21 @@ import { getInitialLocale, setLocale, applyTranslations, t } from './i18n.js';
 import { initChatbot } from './chatbot.js';
 
 // -----------------------------------------------------------------------
-// Configuracion del backend de contacto.
+// Configuracion de EmailJS para el formulario de contacto.
 //
-// El formulario NO tiene backend real todavia. Para conectarlo:
-// 1. Crea un endpoint (Formspree, Google Apps Script Web App, o una API propia)
-//    que acepte POST con JSON: { name, company, email, phone, businessType,
-//    solution, message }.
-// 2. El backend DEBE volver a validar y sanitizar todos los campos: la
-//    validacion de este archivo es solo de experiencia de usuario, no de
-//    seguridad.
-// 3. Coloca la URL del endpoint en CONTACT_ENDPOINT_URL. Mientras esa
-//    constante este vacia, el formulario opera en modo demostracion y jamas
-//    simula un envio exitoso a un servidor real.
+// El formulario NO envia correos todavia. Para activarlo (ver README.md,
+// seccion "Como conectar el formulario de contacto a un correo real"):
+// 1. Crea una cuenta gratuita en https://www.emailjs.com/
+// 2. Conecta el correo de destino en "Email Services" y copia el Service ID.
+// 3. Crea una plantilla en "Email Templates" pegando el HTML de
+//    .tools/emailjs-template.html (Code Editor) y copia el Template ID.
+// 4. Copia tu Public Key desde Account -> General -> API Keys.
+// 5. Pega los tres valores abajo. Mientras alguno quede vacio, el formulario
+//    opera en modo demostracion y jamas simula un envio real.
 // -----------------------------------------------------------------------
-export const CONTACT_ENDPOINT_URL = '';
+export const EMAILJS_SERVICE_ID = '';
+export const EMAILJS_TEMPLATE_ID = '';
+export const EMAILJS_PUBLIC_KEY = '';
 
 const THEME_KEY = 'lnx-theme';
 const SUBMIT_COOLDOWN_MS = 30000;
@@ -467,8 +468,8 @@ function initContactForm() {
       company: sanitizeInput(form.company.value),
       email: sanitizeInput(form.email.value),
       phone: sanitizeInput(form.phone.value),
-      businessType: sanitizeInput(form.businessType.value),
-      solution: sanitizeInput(form.solution.value),
+      businessType: sanitizeInput(form.businessType.selectedOptions[0]?.text || form.businessType.value),
+      solution: sanitizeInput(form.solution.selectedOptions[0]?.text || form.solution.value),
       message: sanitizeInput(form.message.value),
     };
 
@@ -479,17 +480,29 @@ function initContactForm() {
     if (submitLabel) submitLabel.textContent = t(locale, 'contact.submitLoading');
 
     try {
-      if (CONTACT_ENDPOINT_URL) {
-        const response = await fetch(CONTACT_ENDPOINT_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
-        });
-        if (!response.ok) throw new Error('request-failed');
-        showStatus('success', t(locale, 'contact.statusSuccessDemo'));
+      if (EMAILJS_SERVICE_ID && EMAILJS_TEMPLATE_ID && EMAILJS_PUBLIC_KEY && window.emailjs) {
+        await window.emailjs.send(
+          EMAILJS_SERVICE_ID,
+          EMAILJS_TEMPLATE_ID,
+          {
+            from_name: payload.name,
+            company: payload.company,
+            email: payload.email,
+            phone: payload.phone || t(locale, 'contact.notProvided'),
+            business_type: payload.businessType,
+            solution: payload.solution,
+            message: payload.message,
+            submitted_at: new Date().toLocaleString(locale === 'en' ? 'en-US' : 'es-MX', {
+              dateStyle: 'medium',
+              timeStyle: 'short',
+            }),
+          },
+          { publicKey: EMAILJS_PUBLIC_KEY }
+        );
+        showStatus('success', t(locale, 'contact.statusSuccess'));
         form.reset();
       } else {
-        // Sin endpoint configurado: modo demostracion, nunca se afirma un envio real.
+        // EmailJS sin configurar: modo demostracion, nunca se afirma un envio real.
         showStatus('info', t(locale, 'contact.statusSuccessDemo'));
       }
     } catch (err) {

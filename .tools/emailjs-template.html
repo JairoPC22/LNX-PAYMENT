@@ -1,0 +1,107 @@
+<!--
+  Plantilla de correo para EmailJS (Email Templates -> Code Editor).
+  Variables que debe enviar el formulario (ver initContactForm en js/script.js):
+    {{from_name}}      Nombre de la persona que llena el formulario
+    {{company}}        Nombre del negocio/empresa
+    {{email}}          Correo de la persona (tambien se usa como Reply-To)
+    {{phone}}          Telefono (o "No proporcionado")
+    {{business_type}}  Tipo de negocio, ya traducido a texto legible
+    {{solution}}       Solucion de interes, ya traducida a texto legible
+    {{message}}        Mensaje escrito por la persona
+    {{submitted_at}}   Fecha/hora del envio, ya formateada
+
+  Configuracion recomendada en la plantilla de EmailJS (fuera de este HTML):
+    - To Email:    LNXTech2025@outlook.com   (fijo, no debe venir del formulario)
+    - From Name:   LNX Payments - Sitio web
+    - Reply To:    {{email}}
+    - Subject:     Nueva solicitud de contacto - {{company}} ({{from_name}})
+-->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#eef1f5;padding:24px 0;font-family:Arial,Helvetica,sans-serif;">
+  <tr>
+    <td align="center">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background-color:#ffffff;border-radius:12px;overflow:hidden;">
+
+        <!-- Encabezado -->
+        <tr>
+          <td style="background-color:#031d42;padding:28px 32px;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="56" valign="middle">
+                  <img
+                    src="https://jairopc22.github.io/LNX-PAYMENT/assets/icons/icon-512x512.png"
+                    width="48"
+                    height="48"
+                    alt="LNX"
+                    style="display:block;border-radius:10px;"
+                  />
+                </td>
+                <td valign="middle" style="padding-left:14px;">
+                  <p style="margin:0;font-size:18px;font-weight:bold;color:#ffffff;letter-spacing:0.5px;">LNX TECHNOLOGIES</p>
+                  <p style="margin:2px 0 0;font-size:13px;color:#19b9ed;">Nueva solicitud de contacto</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Cuerpo -->
+        <tr>
+          <td style="padding:32px;">
+            <p style="margin:0 0 20px;font-size:15px;color:#1a2b45;">
+              Has recibido una nueva solicitud desde el formulario de contacto del sitio web de LNX.
+            </p>
+
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;overflow:hidden;">
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;width:38%;font-size:13px;color:#5b6b85;">Nombre</td>
+                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{from_name}}</td>
+              </tr>
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Empresa / negocio</td>
+                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{company}}</td>
+              </tr>
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Correo</td>
+                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;">
+                  <a href="mailto:{{email}}" style="color:#0874be;font-weight:bold;text-decoration:none;">{{email}}</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Teléfono</td>
+                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{phone}}</td>
+              </tr>
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;border-bottom:1px solid #e2e6ec;font-size:13px;color:#5b6b85;">Tipo de negocio</td>
+                <td style="padding:14px 16px;border-bottom:1px solid #e2e6ec;font-size:14px;color:#031d42;font-weight:bold;">{{business_type}}</td>
+              </tr>
+              <tr>
+                <td style="padding:14px 16px;background-color:#f7f9fb;font-size:13px;color:#5b6b85;">Solución de interés</td>
+                <td style="padding:14px 16px;font-size:14px;color:#031d42;font-weight:bold;">{{solution}}</td>
+              </tr>
+            </table>
+
+            <p style="margin:24px 0 8px;font-size:13px;color:#5b6b85;text-transform:uppercase;letter-spacing:0.5px;">Mensaje</p>
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e2e6ec;border-radius:10px;">
+              <tr>
+                <td style="padding:16px;font-size:14px;line-height:1.6;color:#1a2b45;">{{message}}</td>
+              </tr>
+            </table>
+
+            <p style="margin:24px 0 0;font-size:12px;color:#8a97ab;">
+              Enviado el {{submitted_at}} desde el formulario de contacto de lnxpayments.
+              Responde directamente a este correo para contactar a {{from_name}}.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Pie -->
+        <tr>
+          <td style="background-color:#031d42;padding:16px 32px;">
+            <p style="margin:0;font-size:12px;color:#93a4c2;">© 2026 LNX Technologies</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>

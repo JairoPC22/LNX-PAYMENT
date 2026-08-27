@@ -175,21 +175,34 @@ siguen sin incluirse porque no fueron confirmados. Cuando existan esos datos ofi
 - Si agregas redes sociales, considera añadir la propiedad `sameAs` al bloque JSON-LD en
   `index.html`.
 
-## Cómo conectar el formulario de contacto a un backend real
+## Cómo conectar el formulario de contacto a un correo real (EmailJS)
 
-El formulario (`#contact-form` en `index.html`, lógica en `js/script.js`) **no envía datos a
-ningún servidor todavía**. Mientras `CONTACT_ENDPOINT_URL` esté vacía, el formulario opera en modo
-demostración: valida y muestra un mensaje de éxito simulado, pero nunca dice haber sido enviado a
-un sistema real.
+El formulario (`#contact-form` en `index.html`, lógica en `js/script.js`) usa
+[EmailJS](https://www.emailjs.com/) para enviar cada solicitud como un correo, sin necesidad de
+backend propio. El SDK ya está cargado en `index.html`. Mientras `EMAILJS_SERVICE_ID`,
+`EMAILJS_TEMPLATE_ID` o `EMAILJS_PUBLIC_KEY` (al inicio de `js/script.js`) queden vacíos, el
+formulario opera en modo demostración: valida y muestra un mensaje simulado, pero nunca dice
+haber enviado un correo real.
 
-Para conectarlo:
-1. Crea un endpoint (Formspree, un Google Apps Script Web App, o una API propia) que acepte
-   `POST` con JSON: `{ name, company, email, phone, businessType, solution, message }`.
-2. Abre `js/script.js` y define la constante `CONTACT_ENDPOINT_URL` con la URL de ese endpoint.
-3. **Importante:** la validación de `js/script.js` es solo de experiencia de usuario. El backend
-   debe volver a validar y sanitizar todos los campos — nunca confíes en la validación del
-   cliente para seguridad.
-4. No expongas claves ni tokens secretos en este archivo (es código público del sitio).
+Para activarlo:
+1. Crea una cuenta gratuita en [emailjs.com](https://www.emailjs.com/) (el plan gratuito alcanza
+   para 200 correos al mes).
+2. En **Email Services**, conecta el correo de destino (`LNXTech2025@outlook.com`) y copia el
+   **Service ID** generado.
+3. En **Email Templates**, crea una plantilla nueva, cambia al **Code Editor** y pega el contenido
+   de `.tools/emailjs-template.html`. En la configuración de la plantilla:
+   - **To Email:** `LNXTech2025@outlook.com` (fijo, no debe venir del formulario)
+   - **From Name:** `LNX Payments - Sitio web`
+   - **Reply To:** `{{email}}`
+   - **Subject:** `Nueva solicitud de contacto - {{company}} ({{from_name}})`
+
+   Copia el **Template ID** de esa plantilla.
+4. En **Account → General → API Keys**, copia tu **Public Key**.
+5. Abre `js/script.js` y pega los tres valores en `EMAILJS_SERVICE_ID`, `EMAILJS_TEMPLATE_ID` y
+   `EMAILJS_PUBLIC_KEY`. La Public Key de EmailJS está diseñada para exponerse en código de
+   cliente (como una llave publicable), así que no es un secreto que deba ocultarse.
+6. Prueba el formulario en el sitio publicado; el correo debe llegar con el diseño de
+   `.tools/emailjs-template.html` (logo, colores de marca y todos los campos de la solicitud).
 
 ## Cómo configurar el dominio final
 
@@ -248,12 +261,18 @@ confirmados, siguiendo la instrucción de no inventar datos comerciales:
   footer están preparados pero apuntan a `#`).
 - **Cifras de la empresa**: año de fundación, número de clientes, empleados, oficinas, países,
   certificaciones, volumen procesado.
-- **Backend del formulario de contacto** (`CONTACT_ENDPOINT_URL` vacía por diseño).
+- **Credenciales de EmailJS** (`EMAILJS_SERVICE_ID`, `EMAILJS_TEMPLATE_ID`, `EMAILJS_PUBLIC_KEY`
+  vacías por diseño hasta que se cree la cuenta; ver la sección de EmailJS arriba).
 
 ## Notas de seguridad
 
-- El formulario sanitiza y valida en el cliente solo por experiencia de usuario; el backend que
-  se conecte **debe** revalidar todo.
+- El formulario sanitiza y valida en el cliente solo por experiencia de usuario; si en el futuro
+  se reemplaza EmailJS por un backend propio, ese backend **debe** revalidar todo.
+- La Public Key de EmailJS es publicable por diseño (como una llave pública), pero como cualquier
+  integración 100% del lado del cliente, alguien con la Public Key podría enviar correos usando la
+  plantilla directamente vía la API de EmailJS. El honeypot y el límite de reenvío (30s) ya están
+  implementados; EmailJS también aplica su propio límite de correos por cuenta en el plan
+  gratuito. Si el spam se vuelve un problema, EmailJS soporta agregar reCAPTCHA a la plantilla.
 - No se usa `innerHTML` con datos provenientes del usuario en ningún punto del código.
 - Los enlaces externos (cuando se agreguen) deben incluir `rel="noopener noreferrer"`.
 - No hay claves, tokens ni contraseñas en este repositorio.
